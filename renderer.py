@@ -48,9 +48,9 @@ def render_filtered_view_base64(json_path_or_data, filters=None, show_background
 
     # Prepare filters
     filters = filters or {}
-    filter_layers = set(filters.get("layers", []))
-    filter_types = set(filters.get("types", []))
-    filter_ids = set(filters.get("ids", []))
+    filter_layers = set(filters.get("layers") or [])
+    filter_types = set(filters.get("types") or [])
+    filter_ids = set(filters.get("ids") or [])
 
     def is_filtered(e):
         """True if entity matches ANY filter provided."""
