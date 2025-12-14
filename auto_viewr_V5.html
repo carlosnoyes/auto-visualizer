@@ -497,6 +497,8 @@
                 if (areaKey && entity[areaKey] !== undefined) entity.area = entity[areaKey] * toFeet * toFeet;
                 if (entity.vertices) entity.vertices = entity.vertices.map(v => Array.isArray(v) ? v.map(c => c * toFeet) : v * toFeet);
                 if (entity.insert) entity.insert = entity.insert.map(c => c * toFeet);
+                // Convert text height to feet
+                if (entity.height !== undefined) entity.height = entity.height * toFeet;
                 return entity;
             });
             
@@ -630,7 +632,18 @@
                 if (tv.length > 0) { ctx.moveTo(tv[0][0], tv[0][1]); for (let i = 1; i < tv.length; i++) ctx.lineTo(tv[i][0], tv[i][1]); ctx.stroke(); }
             });
         }
-        function drawText(entity, color) { ctx.save(); ctx.translate(entity.insert[0], entity.insert[1]); ctx.scale(1, -1); ctx.rotate(-(entity.rotation || 0) * Math.PI / 180); ctx.font = `${12 / zoom}px sans-serif`; ctx.fillText(entity.text || '', 0, 0); ctx.restore(); }
+        function drawText(entity, color) {
+            ctx.save();
+            ctx.translate(entity.insert[0], entity.insert[1]);
+            ctx.scale(1, -1);
+            ctx.rotate(-(entity.rotation || 0) * Math.PI / 180);
+            // Use actual text height from DXF (converted to feet) instead of fixed pixel size
+            // Text appears smaller at default zoom and scales naturally with zoom
+            const textHeight = entity.height || 1.0; // Height in drawing units (feet)
+            ctx.font = `${textHeight}px sans-serif`;
+            ctx.fillText(entity.text || '', 0, 0);
+            ctx.restore();
+        }
 
         function handleWheel(e) { e.preventDefault(); const rect = canvas.getBoundingClientRect(); const mx = e.clientX - rect.left, my = e.clientY - rect.top; const zf = e.deltaY > 0 ? 0.9 : 1.1; const nz = Math.max(0.1, Math.min(50, zoom * zf)); panX = mx - (mx - panX) * (nz / zoom); panY = my - (my - panY) * (nz / zoom); zoom = nz; updateZoomDisplay(); render(); }
         function handleMouseDown(e) { isPanning = true; lastMouseX = e.clientX; lastMouseY = e.clientY; canvas.style.cursor = 'grabbing'; }

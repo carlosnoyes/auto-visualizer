@@ -1,0 +1,448 @@
+{
+  "filename": "building032-j_floor1.dxf",
+  "units": "in",
+  "unit_code": 1,
+  "offset": {
+    "x": 242.4353432767093,
+    "y": -889.5752184137235
+  },
+  "layers": {
+    "0": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "_Xref": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-ASSIGN": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-SNUM": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "_Not Reported": {
+      "color": "#000036",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-VNUM": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "_Space_Without_CAD": {
+      "color": "#000014",
+      "frozen": false,
+      "locked": false
+    },
+    "_Facility_Only": {
+      "color": "#000054",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Information": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-TEXT": {
+      "color": "#000003",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Division-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Department-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Category-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Defpoints": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Capacity": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-College-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-RNUM": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-GROSS": {
+      "color": "#000001",
+      "frozen": false,
+      "locked": false
+    },
+    "A-WALL": {
+      "color": "#000005",
+      "frozen": false,
+      "locked": false
+    },
+    "A-TTLB": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    }
+  },
+  "blocks": {},
+  "entities": [
+    {
+      "type": "LWPOLYLINE",
+      "layer": "AREA-ASSIGN",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "80F",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-VNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "F12",
+      "text": "032J",
+      "insert": [
+        337.0045091618345,
+        213.60726523210258
+      ],
+      "rotation": 0,
+      "height": 27.0
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-RNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3242C",
+      "text": "0910-00",
+      "insert": [
+        362.6937844892087,
+        221.3745125968445
+      ],
+      "rotation": 0,
+      "height": 1.2
+    },
+    {
+      "type": "LWPOLYLINE",
+      "layer": "AREA-GROSS",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "332F5",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "LWPOLYLINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3331E",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-TTLB",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "333C3",
+      "text": "Equine Center Mare Barn 032-J FLOOR1",
+      "insert": [
+        -487.19223080202937,
+        -1059.4817692290526
+      ],
+      "rotation": 0,
+      "height": 71.99999999999999
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-SNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "33647",
+      "text": "0320J91000",
+      "insert": [
+        356.0948039471226,
+        224.20929816816658
+      ],
+      "rotation": 0,
+      "height": 1.2
+    },
+    {
+      "type": "TEXT",
+      "layer": "AREA-TEXT",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3378A",
+      "text": "3,312 SF",
+      "insert": [
+        344.4268630875995,
+        157.95699591215737
+      ],
+      "rotation": 0,
+      "height": 13.0
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-College-Color",
+      "color_hex": "#e3c5e1",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "34290",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Division-Color",
+      "color_hex": "#e3c5e1",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "34291",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Department-Color",
+      "color_hex": "#e3c5e1",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "34292",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Category-Color",
+      "color_hex": "#fbafa2",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "34293",
+      "length (in)": 4387.5625,
+      "area (in^2)": 476991.9098,
+      "vertices": [
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ],
+        [
+          242.4353432767093,
+          -889.5752184137235
+        ],
+        [
+          242.4353432767093,
+          1059.4817679680414
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.13915606494993,
+          1059.4817692290526
+        ],
+        [
+          487.19223080202937,
+          -889.5630476351361
+        ]
+      ],
+      "vertex_count": 6
+    }
+  ]
+}

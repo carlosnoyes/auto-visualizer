@@ -5,42 +5,6 @@ from ezdxf import path
 from ezdxf.colors import int2rgb
 from pathlib import Path
 
-# =============================================================
-# CONFIG
-# =============================================================
-
-OUTPUT_DIR = Path("JSONs")
-DXF_DIR = Path("DXFs")
-
-FLATTEN_TOLERANCE = 0.05
-
-# =============================================================
-# UNIT MAP (Standard DXF Codes)
-# =============================================================
-DXF_UNITS = {
-    0: "Unitless",
-    1: "in",
-    2: "ft",
-    3: "mi",
-    4: "mm",
-    5: "cm",
-    6: "m",
-    7: "km",
-    8: "µin",
-    9: "mil",
-    10: "yd",
-    11: "Å",
-    12: "nm",
-    13: "µm",
-    14: "dm",
-    15: "dam",
-    16: "hm",
-    17: "Gm",
-    18: "AU",
-    19: "ly",
-    20: "pc"
-}
-
 
 # =============================================================
 # MATH HELPERS
@@ -98,6 +62,9 @@ def entity_to_json(entity, unit_name="Unitless"):
     """
     Now accepts unit_name to format keys dynamically.
     """
+
+    flatten_tolerance = 0.05
+
     dxftype = entity.dxftype()
     hex_color = get_entity_hex(entity)
     linetype = entity.dxf.get('linetype', 'Continuous')
@@ -118,13 +85,15 @@ def entity_to_json(entity, unit_name="Unitless"):
             content = entity.plain_text() if dxftype == 'MTEXT' else entity.dxf.text
             insert = entity.dxf.insert
             rotation = entity.dxf.rotation if hasattr(entity.dxf, 'rotation') else 0.0
+            height = entity.dxf.get('height', 1.0)  # Get text height from DXF
 
             if not content or content.strip() == "": return None
 
             data.update({
                 "text": content,
                 "insert": [insert.x, insert.y],
-                "rotation": rotation
+                "rotation": rotation,
+                "height": height  # Include text height in JSON output
             })
             return data
         except:
@@ -154,7 +123,7 @@ def entity_to_json(entity, unit_name="Unitless"):
     # --- GEOMETRY (Lines, Polylines, Hatches) ---
     try:
         p = path.make_path(entity)
-        vertices = list(p.flattening(FLATTEN_TOLERANCE))
+        vertices = list(p.flattening(flatten_tolerance))
         v_list = [[v.x, v.y] for v in vertices]
         if not v_list: return None
 
@@ -183,10 +152,34 @@ def parse_dxf(filepath):
     except Exception as e:
         print(f"Error: {e}")
         return None
+    
+    dxf_units = {
+        0: "Unitless",
+        1: "in",
+        2: "ft",
+        3: "mi",
+        4: "mm",
+        5: "cm",
+        6: "m",
+        7: "km",
+        8: "µin",
+        9: "mil",
+        10: "yd",
+        11: "Å",
+        12: "nm",
+        13: "µm",
+        14: "dm",
+        15: "dam",
+        16: "hm",
+        17: "Gm",
+        18: "AU",
+        19: "ly",
+        20: "pc"
+    }   
 
     # --- CAPTURE UNITS ---
     unit_code = doc.header.get("$INSUNITS", 0)
-    unit_name = DXF_UNITS.get(unit_code, "Unitless")
+    unit_name = dxf_units.get(unit_code, "Unitless")
 
     # 1. Layers
     layers = {}
@@ -259,6 +252,8 @@ def parse_dxf(filepath):
 
 
 if __name__ == "__main__":
+    OUTPUT_DIR = Path("JSONs")
+    DXF_DIR = Path("DXFs")
     OUTPUT_DIR.mkdir(exist_ok=True)
 
     dxf_files = sorted(DXF_DIR.glob("*.dxf"))

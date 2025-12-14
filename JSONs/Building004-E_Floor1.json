@@ -1,0 +1,1131 @@
+{
+  "filename": "Building004-E_Floor1.dxf",
+  "units": "in",
+  "unit_code": 1,
+  "offset": {
+    "x": -69198271.77390029,
+    "y": -27696698.098809786
+  },
+  "layers": {
+    "0": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "A-DOOR": {
+      "color": "#000002",
+      "frozen": false,
+      "locked": false
+    },
+    "A-GLAZ": {
+      "color": "#000001",
+      "frozen": false,
+      "locked": false
+    },
+    "A-GRID": {
+      "color": "#000001",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-SNUM": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "A-TTLB": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-GROSS": {
+      "color": "#000001",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-ASSIGN": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "A-WALL": {
+      "color": "#000005",
+      "frozen": false,
+      "locked": false
+    },
+    "AREA-TEXT": {
+      "color": "#000003",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-VNUM": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-College-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Information": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Division-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Department-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Rooms-Category-Color": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "A-IDEN-RNUM": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": false
+    },
+    "Defpoints": {
+      "color": "#000007",
+      "frozen": false,
+      "locked": true
+    },
+    "Rooms-Capacity": {
+      "color": "#000004",
+      "frozen": false,
+      "locked": false
+    }
+  },
+  "blocks": {
+    "_ClosedBlank": [
+      {
+        "type": "LINE",
+        "layer": "0",
+        "color_hex": "#000000",
+        "linetype": "ByBlock",
+        "lineweight": -2,
+        "id": "563",
+        "length (in)": 1.0138,
+        "area (in^2)": 0.0,
+        "vertices": [
+          [
+            -1.0,
+            0.1666666666666667
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "vertex_count": 2
+      },
+      {
+        "type": "LINE",
+        "layer": "0",
+        "color_hex": "#000000",
+        "linetype": "ByBlock",
+        "lineweight": -2,
+        "id": "564",
+        "length (in)": 1.0138,
+        "area (in^2)": 0.0,
+        "vertices": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -1.0,
+            -0.1666666666666667
+          ]
+        ],
+        "vertex_count": 2
+      },
+      {
+        "type": "LINE",
+        "layer": "0",
+        "color_hex": "#000000",
+        "linetype": "ByBlock",
+        "lineweight": -2,
+        "id": "565",
+        "length (in)": 0.3333,
+        "area (in^2)": 0.0,
+        "vertices": [
+          [
+            -1.0,
+            0.1666666666666667
+          ],
+          [
+            -1.0,
+            -0.1666666666666667
+          ]
+        ],
+        "vertex_count": 2
+      }
+    ]
+  },
+  "entities": [
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "2D",
+      "length (in)": 144.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -104.80341809988022,
+          -9.431764636188745
+        ],
+        [
+          -212.4092260301113,
+          86.26039856299758
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "2F",
+      "length (in)": 73.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -153.31402860581875,
+          -63.981931164860725
+        ],
+        [
+          -104.80341809988022,
+          -9.431764636188745
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "30",
+      "length (in)": 65.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -159.29212905466557,
+          -58.66569986566901
+        ],
+        [
+          -116.0977498292923,
+          -10.09363379701972
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "31",
+      "length (in)": 128.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -116.0977498292923,
+          -10.09363379701972
+        ],
+        [
+          -211.74735687673092,
+          74.96606685221195
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "32",
+      "length (in)": 144.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -232.39296904206276,
+          -152.90617520734668
+        ],
+        [
+          -339.998776987195,
+          -57.21401199698448
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "33",
+      "length (in)": 126.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -339.998776987195,
+          -57.21401199698448
+        ],
+        [
+          -256.26813416182995,
+          36.941069934517145
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "34",
+      "length (in)": 128.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -233.05483819544315,
+          -141.61184348538518
+        ],
+        [
+          -328.7044452428818,
+          -56.55214284732938
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "35",
+      "length (in)": 118.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -328.7044452428818,
+          -56.55214284732938
+        ],
+        [
+          -250.2900337278843,
+          31.624838653951883
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "36",
+      "length (in)": 65.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -233.05483819544315,
+          -141.61184348538518
+        ],
+        [
+          -189.86045895516872,
+          -93.03977738693357
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "37",
+      "length (in)": 73.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -232.39296904206276,
+          -152.90617520734668
+        ],
+        [
+          -183.88235852122307,
+          -98.35600867494941
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "38",
+      "length (in)": 8.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -183.88235852122307,
+          -98.35600867494941
+        ],
+        [
+          -189.86045895516872,
+          -93.03977738693357
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "39",
+      "length (in)": 8.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -153.31402860581875,
+          -63.981931164860725
+        ],
+        [
+          -159.29212905466557,
+          -58.66569986566901
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3A",
+      "length (in)": 8.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -250.2900337278843,
+          31.624838653951883
+        ],
+        [
+          -256.26813416182995,
+          36.941069934517145
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3C",
+      "length (in)": 16.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -222.37981946766376,
+          63.00986595451832
+        ],
+        [
+          -211.74735687673092,
+          74.96606685221195
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3D",
+      "length (in)": 24.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -228.35791990160942,
+          68.32609725371003
+        ],
+        [
+          -212.4092260301113,
+          86.26039856299758
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3E",
+      "length (in)": 8.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -222.37981946766376,
+          63.00986595451832
+        ],
+        [
+          -228.35791990160942,
+          68.32609725371003
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GRID",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "3F",
+      "length (in)": 869.75,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          437.5223812609911,
+          -491.71362191438675
+        ],
+        [
+          -212.4092260301113,
+          86.26039856299758
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GRID",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "41",
+      "length (in)": 869.75,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          309.93283031880856,
+          -635.1880324967206
+        ],
+        [
+          -339.998776987195,
+          -57.21401199698448
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GRID",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "42",
+      "length (in)": 1160.5,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -332.9029668420553,
+          -265.929636657238
+        ],
+        [
+          438.28283455967903,
+          601.2685585021973
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GRID",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "43",
+      "length (in)": 1160.5,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -270.13291223347187,
+          -321.7500651963055
+        ],
+        [
+          501.05288918316364,
+          545.4481299631298
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GRID",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "44",
+      "length (in)": 1160.5,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -440.5087747871876,
+          -170.2374734468758
+        ],
+        [
+          330.67702662944794,
+          696.9607217051089
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LWPOLYLINE",
+      "layer": "AREA-ASSIGN",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "45",
+      "length (in)": 608.0,
+      "area (in^2)": 22528.0,
+      "vertices": [
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ],
+        [
+          -211.74735690653324,
+          74.96606689319015
+        ],
+        [
+          -116.09774987399578,
+          -10.093633737415075
+        ],
+        [
+          -233.05483824014664,
+          -141.61184340715408
+        ],
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ]
+      ],
+      "vertex_count": 5
+    },
+    {
+      "type": "LWPOLYLINE",
+      "layer": "AREA-GROSS",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "47",
+      "length (in)": 672.0,
+      "area (in^2)": 27648.0,
+      "vertices": [
+        [
+          -339.998776987195,
+          -57.21401199698448
+        ],
+        [
+          -212.4092260301113,
+          86.26039856299758
+        ],
+        [
+          -104.80341811478138,
+          -9.431764665991068
+        ],
+        [
+          -232.39296908676624,
+          -152.90617522597313
+        ],
+        [
+          -339.998776987195,
+          -57.21401199698448
+        ]
+      ],
+      "vertex_count": 5
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GLAZ",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "51",
+      "length (in)": 46.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -186.87140874564648,
+          -95.6978930272162
+        ],
+        [
+          -156.303078815341,
+          -61.323815524578094
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GLAZ",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "53",
+      "length (in)": 46.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -183.88235852122307,
+          -98.35600867494941
+        ],
+        [
+          -153.31402860581875,
+          -63.981931164860725
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-GLAZ",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "55",
+      "length (in)": 46.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -189.86045895516872,
+          -93.03977738693357
+        ],
+        [
+          -159.29212905466557,
+          -58.66569986566901
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LWPOLYLINE",
+      "layer": "A-DOOR",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "56",
+      "length (in)": 108.7121,
+      "area (in^2)": 1352.75,
+      "vertices": [
+        [
+          -228.85631658136845,
+          67.76565033569932
+        ],
+        [
+          -260.24134388566017,
+          95.67586460337043
+        ],
+        [
+          -259.74294720590115,
+          96.23631151393056
+        ],
+        [
+          -261.0883628278971,
+          94.64571649581194
+        ],
+        [
+          -262.34795156121254,
+          92.9977131895721
+        ],
+        [
+          -263.5204912722111,
+          91.29582165926695
+        ],
+        [
+          -264.6047598719597,
+          89.543561976403
+        ],
+        [
+          -265.59953524172306,
+          87.74445420131087
+        ],
+        [
+          -266.50359527766705,
+          85.9020183980465
+        ],
+        [
+          -268.03468085825443,
+          82.1012429818511
+        ],
+        [
+          -269.1882397532463,
+          78.16939624771476
+        ],
+        [
+          -269.6203913986683,
+          76.16312129795551
+        ],
+        [
+          -269.9544950425625,
+          74.13463871926069
+        ],
+        [
+          -270.1893285661936,
+          72.08746857196093
+        ],
+        [
+          -270.3236698657274,
+          70.02513092011213
+        ],
+        [
+          -270.3562968224287,
+          67.95114583522081
+        ],
+        [
+          -270.2859873175621,
+          65.8690333776176
+        ],
+        [
+          -270.1126192957163,
+          63.79296034574509
+        ],
+        [
+          -269.8379687219858,
+          61.73698230087757
+        ],
+        [
+          -269.46366046369076,
+          59.704452477395535
+        ],
+        [
+          -268.99131943285465,
+          57.69872409105301
+        ],
+        [
+          -268.42257054150105,
+          55.72315037623048
+        ],
+        [
+          -267.75903865695,
+          53.781084548681974
+        ],
+        [
+          -266.1541255861521,
+          50.01088947802782
+        ],
+        [
+          -264.1895794123411,
+          46.41496467590332
+        ],
+        [
+          -263.07650615274906,
+          44.69073669239879
+        ],
+        [
+          -261.87839932739735,
+          43.02013595029712
+        ],
+        [
+          -260.59688380360603,
+          41.406515680253506
+        ],
+        [
+          -259.2335845082998,
+          39.853229101747274
+        ],
+        [
+          -257.79012632369995,
+          38.36362944543362
+        ],
+        [
+          -256.26813416182995,
+          36.941069930791855
+        ]
+      ],
+      "vertex_count": 31
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-TTLB",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "5C",
+      "text": "Aero Hazardous Material Storage 004E Floor1",
+      "insert": [
+        -501.05288918316364,
+        -696.9607217051089
+      ],
+      "rotation": 48.35380489695874,
+      "height": 72.0
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "360",
+      "length (in)": 1.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -232.39296907186508,
+          -152.90617522597313
+        ],
+        [
+          -231.72844015061855,
+          -152.15891267731786
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "LINE",
+      "layer": "A-WALL",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "361",
+      "length (in)": 1.0,
+      "area (in^2)": 0.0,
+      "vertices": [
+        [
+          -232.39296907186508,
+          -152.90617522597313
+        ],
+        [
+          -231.72844015061855,
+          -152.15891267731786
+        ]
+      ],
+      "vertex_count": 2
+    },
+    {
+      "type": "TEXT",
+      "layer": "AREA-TEXT",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "415",
+      "text": "156 SF",
+      "insert": [
+        -275.03969602286816,
+        -40.11716312542558
+      ],
+      "rotation": 318.3538048969588,
+      "height": 18.0
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-VNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "5EC",
+      "text": "100",
+      "insert": [
+        -252.79516868293285,
+        -27.55918737500906
+      ],
+      "rotation": 318.3538048969588,
+      "height": 27.0
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-RNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "17D4",
+      "text": "0100-00",
+      "insert": [
+        -229.37221336364746,
+        -21.980401005595922
+      ],
+      "rotation": 318.35,
+      "height": 0.36
+    },
+    {
+      "type": "TEXT",
+      "layer": "A-IDEN-SNUM",
+      "color_hex": null,
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "19C5",
+      "text": "0040E10000",
+      "insert": [
+        -229.79819445312023,
+        -23.272702485322952
+      ],
+      "rotation": 48.35380489695874,
+      "height": 0.36
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-College-Color",
+      "color_hex": "#adadad",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "24AE",
+      "length (in)": 608.0,
+      "area (in^2)": 22528.0,
+      "vertices": [
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ],
+        [
+          -211.74735690653324,
+          74.96606689319015
+        ],
+        [
+          -116.09774987399578,
+          -10.093633737415075
+        ],
+        [
+          -233.05483824014664,
+          -141.61184340715408
+        ],
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ]
+      ],
+      "vertex_count": 5
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Division-Color",
+      "color_hex": "#99d7b2",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "24AF",
+      "length (in)": 608.0,
+      "area (in^2)": 22528.0,
+      "vertices": [
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ],
+        [
+          -211.74735690653324,
+          74.96606689319015
+        ],
+        [
+          -116.09774987399578,
+          -10.093633737415075
+        ],
+        [
+          -233.05483824014664,
+          -141.61184340715408
+        ],
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ]
+      ],
+      "vertex_count": 5
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Department-Color",
+      "color_hex": "#99d7b2",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "24B0",
+      "length (in)": 608.0,
+      "area (in^2)": 22528.0,
+      "vertices": [
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ],
+        [
+          -211.74735690653324,
+          74.96606689319015
+        ],
+        [
+          -116.09774987399578,
+          -10.093633737415075
+        ],
+        [
+          -233.05483824014664,
+          -141.61184340715408
+        ],
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ]
+      ],
+      "vertex_count": 5
+    },
+    {
+      "type": "HATCH",
+      "layer": "Rooms-Category-Color",
+      "color_hex": "#e3c5e1",
+      "linetype": "Continuous",
+      "lineweight": -1,
+      "id": "24B1",
+      "length (in)": 608.0,
+      "area (in^2)": 22528.0,
+      "vertices": [
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ],
+        [
+          -211.74735690653324,
+          74.96606689319015
+        ],
+        [
+          -116.09774987399578,
+          -10.093633737415075
+        ],
+        [
+          -233.05483824014664,
+          -141.61184340715408
+        ],
+        [
+          -328.70444528758526,
+          -56.552142795175314
+        ]
+      ],
+      "vertex_count": 5
+    }
+  ]
+}
