@@ -212,7 +212,7 @@
                 </div>
                 <div class="panel-content">
                     <div class="toggle-group">
-                        <div class="toggle-item" data-type="text" onclick="toggleEntityType('text')"><span>Text (TEXT, MTEXT)</span><div class="toggle-switch"></div></div>
+                        <div class="toggle-item active" data-type="text" onclick="toggleEntityType('text')"><span>Text (TEXT, MTEXT)</span><div class="toggle-switch"></div></div>
                         <div class="toggle-item active" data-type="lines" onclick="toggleEntityType('lines')"><span>Lines (LINE, ARC, etc.)</span><div class="toggle-switch"></div></div>
                         <div class="toggle-item active" data-type="areas" onclick="toggleEntityType('areas')"><span>Areas (HATCH)</span><div class="toggle-switch"></div></div>
                         <div class="toggle-item active" data-type="blocks" onclick="toggleEntityType('blocks')"><span>Blocks (INSERT)</span><div class="toggle-switch"></div></div>
@@ -333,7 +333,7 @@
         let entities = [];
         let blocks = {};
         let sourceUnit = 'in';
-        let entityTypeVisible = { text: false, lines: true, areas: true, blocks: true };
+        let entityTypeVisible = { text: true, lines: true, areas: true, blocks: true };
         let currentUnit = 'ft';
         let hoveredEntityId = null;
         let canvas, ctx;
@@ -453,7 +453,7 @@
 
             try {
                 // Fetch directly from GitHub raw URL (supports CORS)
-                const url = 'https://raw.githubusercontent.com/carlosnoyes/checkmate-example-data/refs/heads/main/cad-chat/Building001-0_Floor1.json';
+                const url = 'https://raw.githubusercontent.com/carlosnoyes/auto-visualizer/refs/heads/main/JSONs/Building001-0_Floor1.json';
                 const response = await fetch(url);
                 
                 if (!response.ok) {
