@@ -121,8 +121,8 @@
         .vertices-btn:hover { background: var(--bg-card); color: var(--text-primary); }
         
         /* Chat Tab */
-        .chat-container { flex: 1; display: flex; flex-direction: column; }
-        .chat-messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+        .chat-container { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+        .chat-messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px; min-height: 0; }
         .chat-message { display: flex; gap: 12px; }
         .chat-message.user { flex-direction: row-reverse; }
         .chat-avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -364,6 +364,25 @@
                     { type: 'thinking', message: 'Thinking...', delay: 1000 },
                     { type: 'response', message: 'The gross linear footage comes out to 4,906.49 ft.\n\nJust a heads-up on how you use that number: It looks like this is a perimeter measurement.\n\nFraming/Insulation: You\'ll want to cut that in half (~2,450 ft) to get the actual length of the wall runs.\n\nDrywall/Paint: You can use the full 4,906 ft number, as it accounts for both sides of the wall surfaces.', delay: 3000 }
                 ]
+            },
+            "what is the area of the women's bathroom": {
+                question: "What is the area of the women's bathroom?",
+                steps: [
+                    { type: 'thinking', message: 'Thinking...', delay: 1000 },
+                    { type: 'action', message: 'Toggling all A-IDEN-ICON on (and everything else off)...', delay: 2000 },
+                    { type: 'execute', action: 'toggleLayersExcept', params: ['A-IDEN-ICON'], delay: 2000 },
+                    { type: 'thinking', message: 'Thinking...', delay: 1000 },
+                    { type: 'action', message: 'Block 815 is called \'CPWOMEN\', this is probably the women\'s bathroom. It is at (479.86, 97.73). Let me look for rooms near there.', delay: 3000 },
+                    { type: 'execute', action: 'toggleOnlyBlockById', params: ['815'], delay: 2000 },
+                    { type: 'thinking', message: 'Thinking...', delay: 1000 },
+                    { type: 'action', message: 'Toggling on AREA-ASSIGN layer (keeping the icon visible)...', delay: 2000 },
+                    { type: 'execute', action: 'addLayersToSelection', params: ['AREA-ASSIGN'], delay: 2000 },
+                    { type: 'thinking', message: 'Thinking...', delay: 1000 },
+                    { type: 'action', message: 'LWPOLYLINE 8D4 surrounds the symbol, it is probably the bathroom.', delay: 2500 },
+                    { type: 'execute', action: 'toggleOnlyEntityById', params: ['8D4', '815'], delay: 2000 },
+                    { type: 'thinking', message: 'Thinking...', delay: 1000 },
+                    { type: 'response', message: 'The area of the women\'s bathroom is 234.04 ft².', delay: 2000 }
+                ]
             }
             // Add more pre-programmed scenarios here
         };
@@ -386,6 +405,48 @@
         function toggleLayersExcept(layersToKeep) {
             entities.forEach(e => {
                 e._selected = layersToKeep.includes(e.layer);
+            });
+            populateLayerUI();
+            updateTable();
+            render();
+        }
+
+        // Helper function to toggle only a specific block by its ID (deselects everything else)
+        function toggleOnlyBlockById(blockId) {
+            // Deselect all entities first
+            entities.forEach(e => e._selected = false);
+            // Select only the entity with matching ID
+            const entity = entities.find(e => e.id === blockId);
+            if (entity) {
+                entity._selected = true;
+            }
+            populateLayerUI();
+            updateTable();
+            render();
+        }
+
+        // Helper function to add layers to current selection (keeps existing selections)
+        function addLayersToSelection(layersToAdd) {
+            const layersArray = Array.isArray(layersToAdd) ? layersToAdd : [layersToAdd];
+            entities.forEach(e => {
+                if (layersArray.includes(e.layer)) {
+                    e._selected = true;
+                }
+            });
+            populateLayerUI();
+            updateTable();
+            render();
+        }
+
+        // Helper function to keep only specific entities by IDs
+        function toggleOnlyEntityById(entityId, keepBlockId) {
+            // Keep only the specified entity and optionally a block
+            entities.forEach(e => {
+                if (e.id === entityId || e.id === keepBlockId) {
+                    e._selected = true;
+                } else {
+                    e._selected = false;
+                }
             });
             populateLayerUI();
             updateTable();
@@ -422,6 +483,12 @@
                         // Execute the specified action
                         if (step.action === 'toggleLayersExcept') {
                             toggleLayersExcept(step.params);
+                        } else if (step.action === 'toggleOnlyBlockById') {
+                            toggleOnlyBlockById(step.params[0]);
+                        } else if (step.action === 'addLayersToSelection') {
+                            addLayersToSelection(step.params[0]);
+                        } else if (step.action === 'toggleOnlyEntityById') {
+                            toggleOnlyEntityById(step.params[0], step.params[1]);
                         }
                         break;
                 }
